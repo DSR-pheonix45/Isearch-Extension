@@ -8,7 +8,11 @@ document.getElementById('search').addEventListener('click', function() {
       keywords: keywords
     });
   });
-  
+
+  document.getElementById('summarize').addEventListener('click', function() {
+    window.open('https://notegpt.io/pdf-summary', '_blank');
+});
+
   chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action === "updateResults") {
       displayResults(request.results);
