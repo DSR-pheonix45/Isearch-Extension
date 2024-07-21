@@ -24,3 +24,11 @@ Manifest.json has markup structure required to create an extension.
 Popup.html is the web Ui of the extension, It has its CSS included.
 Popup.js provides Logic to the buttons and actions in html file
 Background.js provides background support to run the extension on web.
+
+## Now added Ai Summariser
+you can download the pdf and directly summarise it.
+toodles.....
+
+![image](https://github.com/user-attachments/assets/eed6c66f-d41f-4095-aa60-9b7a1dfbc89b)
+
+clone and enjoy.
