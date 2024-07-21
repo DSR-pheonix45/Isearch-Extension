@@ -59,6 +59,46 @@
             background-color: #2980b9;
         }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding-top: 20px;
+}
+
+#keywords, #search, #summarize {
+  width: 80%;
+  max-width: 300px;
+}
+
+#summarize {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+#summarize:hover {
+  background-color: #357ae8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+#summarize:active {
+  background-color: #2a5db0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+}
+
         #results {
             margin-top: 20px;
             max-height: 300px;
@@ -148,6 +188,7 @@
         <h1>Research Paper Searcher</h1>
         <input type="text" id="keywords" placeholder="Enter keywords">
         <button id="search">Search</button>
+        <button id="summarize">Summarize PDF</button>
         <div id="results"></div>
     </div>
     <script src="popup.js"></script>
